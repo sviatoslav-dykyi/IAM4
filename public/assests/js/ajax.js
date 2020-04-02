@@ -122,3 +122,9 @@ function popup(id, selector, text) {
   $(id).find(selector).text(text);
   $(id).modal('show');
 }
+
+if ($('#firstName')[0].dataset.id != '') {
+        $('#exampleModal').modal('show');
+        $('#exampleModalLabel').text('Edit user');
+        $('#user_send').text('Save');
+}

@@ -151,12 +151,7 @@ $names = explode(' ', $user1['name'])
                         <div class="form-group">
                             <label for="lastName" class="col-form-label">Last Name:</label>
                             <input type="text" class="form-control" id="lastName" value="<?=$names[1]?>">
-                        </div>
-
-                        <!--                    <div class="form-group">-->
-                        <!--                        <label for="name" class="col-form-label">Name:</label>-->
-                        <!--                        <input type="text" class="form-control" id="name" value="--><?//=$user['name'] ?? ''?><!--" data-id="--><?//=$user['id'] ?? ''?><!--">-->
-                        <!--                    </div>-->
+                        </div>                        
 
                         <div class="form-group">
                             <span>Status:</span>
@@ -250,20 +245,7 @@ $names = explode(' ', $user1['name'])
 <script src="/assests/js/jquery.js"></script>
 <script src="/assests/js/bootstrap.min.js"></script>
 <script src="/assests/js/ajax.js"></script>
-<?php
-//foreach ($scripts as $script) {
-//    echo $script;
-//}
-//?>
 
-<script>
-    if ($('#firstName')[0].dataset.id != '') {
-        $('#exampleModal').modal('show');
-        $('#exampleModalLabel').text('Edit user');
-        $('#user_send').text('Save');
-    }
-
-</script>
 </body>
 
 </html>
